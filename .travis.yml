@@ -12,8 +12,8 @@ script:
   - docker build -f udagram-reverseproxy/Dockerfile -t  ikindy/udagram-reverseproxy:latesst udagram-reverseproxy
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push ikindy/udagram-api-feed:lastest
+  - docker push ikindy/udagram-api-feed:latest
   - docker push ikindy/udagram-api-user:latest
   - docker push ikindy/udagram-frontend:local
-  - docker push ikindy/udagram-reverseproxy:lastest
+  - docker push ikindy/udagram-reverseproxy:latest
   
