@@ -16,3 +16,4 @@ after_success:
   - docker push ikindy/udagram-api-user:latest
   - docker push ikindy/udagram-frontend:local
   - docker push ikindy/udagram-reverseproxy:lastest
+  
